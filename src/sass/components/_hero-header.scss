@@ -83,18 +83,17 @@
       background-image: url("/src/images/hero-header/desktop/icecream-desk@1x.png");
       background-size: 236px 557px;
     }
-  }
 
-  @include m.screen-density(2) {
-    background-image: url("/src/images/hero-header/mobile/icecream-mobile@2x.png");
-    @include m.mq(medium, and, large) {
-      background-image: url("/src/images/hero-header/tablet/icecream-tablet@2x.png");
-    }
-    @include m.mq(large) {
-      background-image: url("/src/images/hero-header/desktop/icecream-desk@2x.png");
+    @include m.screen-density(2) {
+      background-image: url("/src/images/hero-header/mobile/icecream-mobile@2x.png");
+      @include m.mq(medium, and, large) {
+        background-image: url("/src/images/hero-header/tablet/icecream-tablet@2x.png");
+      }
+      @include m.mq(large) {
+        background-image: url("/src/images/hero-header/desktop/icecream-desk@2x.png");
+      }
     }
   }
-
   @include m.mq(medium) {
     &::after {
       content: "";
