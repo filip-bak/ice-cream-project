@@ -8,11 +8,12 @@
   margin-top: 121px;
   margin-inline: auto;
   @media (min-width: 768px) {
-    max-width: none;
+    min-width: 770px;
     padding: 0 34px;
     margin-top: 122px;
   }
   @include m.mq(large) {
+    min-width: 1280px;
     margin-top: 127px;
   }
   &__label {
