@@ -17,8 +17,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 780px;
+  width: 320px;
 
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
@@ -26,6 +25,11 @@
   border-radius: 4px;
   padding: 15px;
   transition: opacity 800ms ease-out 500ms, transform 1200ms ease-out 100ms;
+
+  @include m.mq(large) {
+    width: 450px;
+    height: 780px;
+  }
   &__icon {
     fill: $bgcolor-hero-header;
     display: block;
@@ -58,17 +62,16 @@
     }
   }
   &__img {
-    // background: url(/src/images/about/dancing-cow.png);
-    // background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    margin: 0 auto;
+    width: 60%;
 
-    // &:hover {
-    //   display: none;
-    // }
     transition: opacity 200ms ease-out 100ms, transform 500ms ease-out 150ms;
+    @include m.mq(large) {
+      width: 80%;
+    }
   }
   &__text {
     display: none;
