@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".js-mobile-modal-container"),t=document.querySelector(".js-open-mobile-modal"),i=document.querySelector(".js-close-mobile-modal"),a=()=>{const i="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!i),e.classList.toggle("is-open")};t.addEventListener("click",a),i.addEventListener("click",a),window.matchMedia("(min-width: 1280px)").addEventListener("change",(i=>{i.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1))}))})();
+//# sourceMappingURL=index.555e2bc6.js.map
